@@ -18,7 +18,7 @@ tasks:
 
       cd ../frontend
       # install dependencies
-      npm install
+      npm install --force
 
       # serve with hot reload at localhost:8080
       npm run dev
@@ -32,4 +32,6 @@ tasks:
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 8080
+    onOpen: open-preview
+  - port: 5000
     onOpen: open-preview
