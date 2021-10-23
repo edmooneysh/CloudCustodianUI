@@ -6,7 +6,7 @@
         <b-col>
           <div>
             <b-jumbotron
-              header="Cloud Custodian UI"
+              header="C7N Manager"
               lead="Cloud Policy Management"
             >
               <p>This tool is meant to be a locally installed light UI client for managing Cloud Custodian Policies.</p>
@@ -103,8 +103,8 @@ export default {
       policyList: [
         {
           id: 0,
-          name: "policy 123",
-          description: "policy description here!!"
+          name: "Sample Policy",
+          description: "Policy Description"
         }
       ],
 
