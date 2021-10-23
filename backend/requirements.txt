@@ -19,9 +19,9 @@ Flask-Script==2.0.6
 Flask-SQLAlchemy==2.4.4
 Flask-WTF==0.14.3
 idna==2.10
-importlib-metadata==3.3.0
+importlib-metadata==3.6.0
 ipdb==0.13.4
-ipython==7.19.0
+ipython==7.23.1
 ipython-genutils==0.2.0
 isort==5.7.0
 itsdangerous==1.1.0
