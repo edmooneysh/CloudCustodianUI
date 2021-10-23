@@ -14,7 +14,7 @@ tasks:
       python manage.py db migrate & 
       python manage.py db upgrade
       # Run backend server
-      python manage.py runserver
+      python manage.py runserver &
 
       cd ../frontend
       # install dependencies
@@ -32,6 +32,6 @@ tasks:
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 8080
-    onOpen: open-preview
+    onOpen: open-browser
   - port: 5000
-    onOpen: open-preview
+    onOpen: ignore
