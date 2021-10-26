@@ -72,6 +72,16 @@ def policies_all():
     
     return resp
 
+
+@app.route('/api/policyfsall', methods=['GET','OPTIONS'])
+def policiesfs_all():
+    """Get all policies from filesystem"""
+    # make this a var in the future in settings
+    with open("c7nfiles/sample1.yml") as f:
+            resp = f.read()
+    return resp
+
+
 @app.route('/api/policy/deploy/<int:id>', methods=['POST', 'OPTIONS'])
 def deploy_policy(id):
     

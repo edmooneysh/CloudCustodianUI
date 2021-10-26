@@ -1,0 +1,11 @@
+- name: ec2-staging
+  description: Find instance age of 14+ hours
+  resource: ec2
+  comment: Report to find staging instances not terminated
+  filters:
+  - type: value
+    key: "tag:Name"
+    op: glob
+    value: "*staging*"
+  - type: instance-age
+    hours: 14
